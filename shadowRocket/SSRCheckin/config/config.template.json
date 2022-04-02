@@ -1,0 +1,11 @@
+[
+  {
+    "url": "https://yourSSRLoginWebPageUrl",
+    "cookie": "yourCookie",
+    "loginId": "yourLoginId",
+    "pass": "yourLoginPassword",
+    "steps": [
+      { "name": "checkin", "api": "/user/checkin", "data": "", "param": "" }
+    ]
+  }
+]
