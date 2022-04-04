@@ -11,6 +11,8 @@
   "author": "",
   "license": "Apache",
   "dependencies": {
+    "form-data": "4.0.0",
+    "node-fetch": "2",
     "puppeteer": "13.5.2"
   },
   "devDependencies": {

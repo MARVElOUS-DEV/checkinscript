@@ -13,8 +13,9 @@ async function main() {
     await page.setUserAgent(
       "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
     );
-    await page.goto(siteCfg.url);
-    logWithStar(`访问${siteCfg.url}成功`);
+    const loginUrl = `${siteCfg.url}${siteCfg.steps[0].api}`;
+    await page.goto(loginUrl);
+    logWithStar(`访问${loginUrl}成功`);
     await page.type("#email", siteCfg.loginId);
     await page.type("#passwd", siteCfg.pass);
     await page.click(".checkbox label");

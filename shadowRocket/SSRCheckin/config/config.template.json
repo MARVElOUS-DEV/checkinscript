@@ -1,11 +1,27 @@
 [
   {
     "url": "https://yourSSRLoginWebPageUrl",
-    "cookie": "yourCookie",
     "loginId": "yourLoginId",
     "pass": "yourLoginPassword",
     "steps": [
-      { "name": "checkin", "api": "/user/checkin", "data": "", "param": "" }
+      {
+        "name": "login",
+        "api": "/auth/login",
+        "data": "",
+        "param": ""
+      },
+      {
+        "name": "checkin",
+        "api": "/user/checkin",
+        "data": "",
+        "param": ""
+      },
+      {
+        "name": "getSubUrl",
+        "api": "/user",
+        "data": "",
+        "param": "uniqueInSubScribeUrl"
+      }
     ]
   }
 ]
